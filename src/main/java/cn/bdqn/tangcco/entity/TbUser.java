@@ -42,6 +42,14 @@ public class TbUser {
                 '}';
     }
 
+    public TbUser() {
+    }
+
+    public TbUser(String userName, String passWord) {
+        this.userName = userName;
+        this.passWord = passWord;
+    }
+
     public Integer getUserId() {
         return userId;
     }

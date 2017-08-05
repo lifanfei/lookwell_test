@@ -42,6 +42,9 @@ public class RoleUser {
                 '}';
     }
 
+    public RoleUser() {
+    }
+
     public Integer getRoluseId() {
         return roluseId;
     }

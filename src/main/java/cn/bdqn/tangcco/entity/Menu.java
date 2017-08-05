@@ -41,6 +41,9 @@ public class Menu {
                 '}';
     }
 
+    public Menu() {
+    }
+
     public Menu(Integer menuId, String text, String menuUrl, Integer parentId, Date createTime, Date updateTime) {
         this.menuId = menuId;
         this.text = text;
