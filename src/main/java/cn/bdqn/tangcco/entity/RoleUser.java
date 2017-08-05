@@ -24,7 +24,7 @@ public class RoleUser {
      */
 
     private Integer roluseId;
-    private TbUser tbUser;
+    private TbUser tbuser;
     private Role role;
     private String roluseDesc;
     private Date createTime;
@@ -34,7 +34,7 @@ public class RoleUser {
     public String toString() {
         return "RoleUser{" +
                 "roluseId=" + roluseId +
-                ", tbUser=" + tbUser +
+                ", tbuser=" + tbuser +
                 ", role=" + role +
                 ", roluseDesc='" + roluseDesc + '\'' +
                 ", createTime=" + createTime +
@@ -50,12 +50,12 @@ public class RoleUser {
         this.roluseId = roluseId;
     }
 
-    public TbUser getTbUser() {
-        return tbUser;
+    public TbUser getTbuser() {
+        return tbuser;
     }
 
-    public void setTbUser(TbUser tbUser) {
-        this.tbUser = tbUser;
+    public void setTbuser(TbUser tbuser) {
+        this.tbuser = tbuser;
     }
 
     public Role getRole() {

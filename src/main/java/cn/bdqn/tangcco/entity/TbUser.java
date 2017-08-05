@@ -25,7 +25,7 @@ public class TbUser {
 
     private Integer userId;
     private String userName;
-    private String password;
+    private String passWord;
     private Date lastLogin;
     private Date createTime;
     private Date updateTime;
@@ -35,7 +35,7 @@ public class TbUser {
         return "TbUser{" +
                 "userId=" + userId +
                 ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
+                ", passWord='" + passWord + '\'' +
                 ", lastLogin=" + lastLogin +
                 ", createTime=" + createTime +
                 ", updateTime=" + updateTime +
@@ -58,12 +58,12 @@ public class TbUser {
         this.userName = userName;
     }
 
-    public String getPassword() {
-        return password;
+    public String getPassWord() {
+        return passWord;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
     }
 
     public Date getLastLogin() {
