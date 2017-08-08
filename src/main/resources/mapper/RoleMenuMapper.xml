@@ -5,7 +5,7 @@
 <mapper namespace="cn.bdqn.tangcco.dao.RoleMenuMapper">
 
     <resultMap id="roleMenuMap" type="cn.bdqn.tangcco.entity.RoleMenu">
-        <id property="rolmenId" column="rolmen_id"></id>
+        <id property="rolemenId" column="rolmen_id"></id>
         <result property="createTime" column="create_time"/>
         <result property="updateTime" column="update_time"/>
         <result property="rolmenDesc" column="rolmen_desc"/>
@@ -13,7 +13,7 @@
         <association property="role" resultMap="roleMap" javaType="Role"/>
     </resultMap>
 
-    <resultMap id="menuMap" type="Menu">
+    <resultMap id="menuMap" type="cn.bdqn.tangcco.entity.Menu">
         <id column="menu_id" property="menuId"></id>
         <result column="menu_name" property="text"/>
         <result column="menu_url" property="menuUrl"/>
@@ -23,7 +23,7 @@
     </resultMap>
 
 
-    <resultMap id="roleMap" type="Role">
+    <resultMap id="roleMap" type="cn.bdqn.tangcco.entity.Role">
         <id column="role_id" property="roleId"></id>
         <result column="role_name" property="roleName"/>
         <result column="role_level" property="roleLevel"/>

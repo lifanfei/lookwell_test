@@ -1,7 +1,7 @@
 <%--
   Created by IntelliJ IDEA.
-  User: Clown
-  Date: 2017/07/25
+  User: jf
+  Date: 2017/08/8
   Time: 11:18
   To change this template use File | Settings | File Templates.
 --%>
@@ -21,7 +21,11 @@
 
            if(username=="" || password==""){
            alert("用户名密码不能为空！");
-           }else{
+           }else if(username.length<0||username.length>10){
+           alert("用户名的长度必须介于1-10之间");
+           }else if(password.length<0||password.length>10){
+               alert("密码长度必须介于1-10之间");
+              }else{
            $("#loginForm").submit();
            }
           //  $("#loginForm").submit();
@@ -43,10 +47,10 @@
     <form  action="${pageContext.request.contextPath}/user/login.controller" method="post" id="loginForm">
 
       <div style="text-align: center">
-        <p>用户名：<input class="easyui-textbox" id="username" data-options="required:true"
+        <p>用户名：<input class="easyui-textbox" id="username" data-options="required:true,validType:'length[1,10]'"
                        name="userName"></p>
-        <p>密&nbsp;&nbsp;&nbsp;码：<input class="easyui-textbox" id="password"  data-options="required:true"
-                                       type="password" name="passWord"></p>
+        <p>密&nbsp;&nbsp;&nbsp;码：<input class="easyui-textbox" id="password"  data-options="required:true,validType:'length[1,10]'"
+                                  type="password"   name="passWord"></p>
 
 
 

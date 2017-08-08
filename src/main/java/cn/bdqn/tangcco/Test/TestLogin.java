@@ -1,5 +1,6 @@
 package cn.bdqn.tangcco.Test;
 
+
 import cn.bdqn.tangcco.entity.Menu;
 import cn.bdqn.tangcco.entity.RoleUser;
 import cn.bdqn.tangcco.entity.TbUser;
@@ -22,7 +23,7 @@ public class TestLogin extends Base {
 
     @Test
     public void testLogin() {
-        RoleUser roleUser=tbuserService.login(new TbUser("admin", "1234"));
+        RoleUser roleUser=tbuserService.login(new TbUser("admin", "123456789012345"));
         System.out.println(roleUser);
     }
 
@@ -36,6 +37,7 @@ public class TestLogin extends Base {
         for (Menu menu : menus1) {
             System.out.println(menu);
         }
+
 
 
     }
